@@ -1,7 +1,7 @@
 # 가장 큰 정사각형 찾기
 
 def solution(board):
-    answer = 0
+    answer = max([max(i) for i in board])
     row, col = len(board), len(board[0])
     for i in range(1, row):
         for j in range(1, col):
