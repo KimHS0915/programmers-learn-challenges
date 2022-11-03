@@ -22,4 +22,5 @@ def solution(n, edge):
             if not dist[node]:
                 q.append(node)
                 dist[node] = dist[curr] + 1
-    return len([d for d in dist if d == max(dist)])
+    max_value = max(dist)
+    return len([d for d in dist if d == max_value])
